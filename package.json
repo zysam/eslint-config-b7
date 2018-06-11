@@ -1,0 +1,44 @@
+{
+  "name": "eslint-config-b7",
+  "version": "0.1.0",
+  "description": "Node Style Guide for b7.",
+  "main": "index",
+  "files": [
+    ".eslintrc",
+    "index.js",
+    "legacy.js",
+    "react.js",
+    "lib"
+  ],
+  "dependencies": {
+    "babel-eslint": "^8.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "coffee": "^4.1.0",
+    "egg-bin": "^1.0.0",
+    "egg-ci": "^1.8.0",
+    "eslint": "^4.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eggjs/eslint-config-b7"
+  },
+  "homepage": "https://github.com/eggjs/eslint-config-b7",
+  "author": "zysam <explnwind@gmail.com>",
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint test/*.test.js lib *.js",
+    "test": "egg-bin test",
+    "ci": "npm run lint && npm run test"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "ci": {
+    "version": "4, 6, 7"
+  }
+}
